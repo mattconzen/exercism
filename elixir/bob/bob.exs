@@ -5,9 +5,9 @@ defmodule Bob do
     # end
 
     cond do
-      input == String.upcase(input)  -> "Whoa, chill out!"
+      input == "" -> "Fine. Be that way."
       String.ends_with?(input, "?")  -> "Sure."
-      input = "" -> "Fine. Be that way."
+      input == String.upcase(input)  -> "Whoa, chill out!"
       true -> "Whatever."
     end
   end
