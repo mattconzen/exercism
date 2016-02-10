@@ -5,7 +5,7 @@ else
 end
 
 ExUnit.start
-ExUnit.configure exclude: :pending, trace: true
+ExUnit.configure exclude: :pending
 
 defmodule BobTest do
   use ExUnit.Case
